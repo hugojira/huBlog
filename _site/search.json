@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hugo Valenzuela Chaparro",
+    "section": "",
+    "text": "Soy un científico de datos, físico de formación. Comencé trabajando en proyetos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde comencé con mi especialización en Machine Learning.\nActualmente estoy interesado en Machine Learning, específicamente en MLOps y en la aplicación de IA generativa.\nEste sitio web es mi portafolio, donde pueden encontrar mi blog. Bueno, en realidad, más que un blog se considerará mi jardín digital.\n\n\n\nOrbitware | Report Monitoring | Enero 2023 - presente\n\n\n\nUniversidad de Sonora | Licenciatura en Física | 📍 Hermosillo, Sonora, México | 2019\nUniversidad de Sonora | Maestría en Ciencia de Datos | 📍 Hermosillo, Sonora, México | 2023"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "huBlog",
+    "section": "",
+    "text": "El contenido escrito aquí está relacionado con la ciencia de datos, por ende estará en español pero con muchas palabras en inglés.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost de bienvenida\n\n\n\n\n\n\nInfo\n\n\n\n\n\n\n\n\n\n27 mar 2024\n\n\nHugo Valenzuela\n\n\n\n\n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Hugo Valenzuela Chaparro",
+    "section": "",
+    "text": "Universidad de Sonora | Licenciatura en Física | 📍 Hermosillo, Sonora, México | 2019\nUniversidad de Sonora | Maestría en Ciencia de Datos | 📍 Hermosillo, Sonora, México | 2023"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Hugo Valenzuela Chaparro",
+    "section": "",
+    "text": "Orbitware | Report Monitoring | Enero 2023 - presente"
+  },
+  {
+    "objectID": "index.html#bio",
+    "href": "index.html#bio",
+    "title": "Hugo Valenzuela Chaparro",
+    "section": "",
+    "text": "Soy un científico de datos, físico de formación. Comencé trabajando en proyetos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde comencé con mi especialización en Machine Learning.\nActualmente estoy interesado en Machine Learning, específicamente en MLOps y en la aplicación de IA generativa.\nEste sitio web es mi portafolio, donde pueden encontrar mi blog. Bueno, en realidad, más que un blog se considerará mi jardín digital."
+  },
+  {
+    "objectID": "index.html#educación",
+    "href": "index.html#educación",
+    "title": "Hugo Valenzuela Chaparro",
+    "section": "",
+    "text": "Universidad de Sonora | Licenciatura en Física | 📍 Hermosillo, Sonora, México | 2019\nUniversidad de Sonora | Maestría en Ciencia de Datos | 📍 Hermosillo, Sonora, México | 2023"
+  },
+  {
+    "objectID": "index.html#experiencia",
+    "href": "index.html#experiencia",
+    "title": "Hugo Valenzuela Chaparro",
+    "section": "",
+    "text": "Orbitware | Report Monitoring | Enero 2023 - presente"
+  },
+  {
+    "objectID": "index.html#formación",
+    "href": "index.html#formación",
+    "title": "Hugo Valenzuela Chaparro",
+    "section": "",
+    "text": "Universidad de Sonora | Licenciatura en Física | 📍 Hermosillo, Sonora, México | 2019\nUniversidad de Sonora | Maestría en Ciencia de Datos | 📍 Hermosillo, Sonora, México | 2023"
+  },
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "CC BY-SA 4.0 DEED",
+    "section": "",
+    "text": "Todo el contenido de este sitio web, incluido el blog, están bajo la licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional."
+  },
+  {
+    "objectID": "license.html#atribución-compartirigual-4.0-internacional",
+    "href": "license.html#atribución-compartirigual-4.0-internacional",
+    "title": "CC BY-SA 4.0 DEED",
+    "section": "",
+    "text": "Todo el contenido de este sitio web, incluido el blog, están bajo la licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional."
+  },
+  {
+    "objectID": "posts/2024-03-30-post-de-bienvenida/index.html",
+    "href": "posts/2024-03-30-post-de-bienvenida/index.html",
+    "title": "Post de bienvenida",
+    "section": "",
+    "text": "¡Hola! Les doy la bienvenida a este primer post. Este blog en realidad es un jardín digital, esto quiere decir que es un espacio para almacenar mis notas de aprendizaje, así cómo también entradas de blog usuales. Este contenido se irá mejorando y actualizando con el tiempo, nada es estático.\nPróximamente estaré populando este sitio con entradas de blog y notas, con contenido relacionado a la ciencia de datos que espero también les sea de utilidad como a mí.\nPara la creación del primer esqueleto de este sitio web, me inspiré en los sitios de Mike Mahoney, Alison Hill, así como en la documentación de Quarto.\nSin más que decir, les invito a explorar el blog."
+  }
+]

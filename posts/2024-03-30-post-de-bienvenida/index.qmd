@@ -1,0 +1,16 @@
+---
+title: "Post de bienvenida"
+lang: es
+author: "Hugo Valenzuela"
+date: "2024-03-27"
+categories: [Info]
+image: "thumbnail.jpg"
+---
+
+¡Hola! Les doy la bienvenida a este primer post. Este blog en realidad es un jardín digital, esto quiere decir que es un espacio para almacenar mis notas de aprendizaje, así cómo también entradas de blog usuales. Este contenido se irá mejorando y actualizando con el tiempo, nada es estático.
+
+Próximamente estaré populando este sitio con entradas de blog y notas, con contenido relacionado a la ciencia de datos que espero también les sea de utilidad como a mí.
+
+Para la creación del primer esqueleto de este sitio web, me inspiré en los sitios de [Mike Mahoney](https://www.mm218.dev/), [Alison Hill](https://www.apreshill.com/), así como en la [documentación de Quarto](https://quarto.org/docs/gallery/#websites).
+
+Sin más que decir, les invito a explorar el blog.

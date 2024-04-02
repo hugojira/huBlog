@@ -1,0 +1,46 @@
+---
+title: "Hugo Valenzuela Chaparro"
+image: avatar.jpg
+about:
+  template: trestles
+  links:
+    - text: LinkedIn
+      icon: linkedin
+      url: https://www.linkedin.com/in/hugo-vach/
+    - text: Github
+      icon: github
+      url: https://github.com/hugojira
+#listing:
+#  contents: posts
+#  sort: "date desc"
+#  type: default
+#  categories: true
+#  sort-ui: false
+#  filter-ui: false
+#page-layout: full
+#title-block-banner: true
+from: markdown+emoji
+---
+
+::: column-page
+
+## Bio
+
+Soy un científico de datos, físico de formación. Comencé trabajando en proyetos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde comencé con mi especialización en Machine Learning.
+
+Actualmente estoy interesado en Machine Learning, específicamente en MLOps y en la aplicación de IA generativa.
+
+Este sitio web es mi portafolio, donde pueden encontrar mi [blog](blog.qmd). Bueno, en realidad, más que un blog se considerará mi jardín digital.
+
+## Experiencia
+
+Orbitware \| Report Monitoring \| Enero 2023 - presente
+
+## Formación
+
+Universidad de Sonora \| Licenciatura en Física \| :round_pushpin: Hermosillo, Sonora, México \| 2019
+
+Universidad de Sonora \| Maestría en Ciencia de Datos \| :round_pushpin: Hermosillo, Sonora, México \| 2023
+
+
+:::

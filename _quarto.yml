@@ -1,0 +1,27 @@
+project:
+  type: website
+  
+website:
+  title: "HUGOJIRA"
+  navbar:
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "huBlog"
+        href: blog.qmd
+      - icon: github
+        href: https://github.com/hugojira
+  page-footer: 
+    left: 
+      - text: "© 2024 Hugo Valenzuela Chaparro · Hecho con Quarto"
+    right: 
+      - text: "Licencia"
+        href: license.qmd
+format:
+  html:
+    theme: materia
+    css: styles.css
+    from: "markdown+emoji"
+    
+editor: visual
+
