@@ -26,7 +26,7 @@ from: markdown+emoji
 
 ## Bio
 
-Soy un científico de datos, físico de formación. Comencé trabajando en proyetos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde comencé con mi especialización en Machine Learning.
+Soy un científico de datos, físico de formación. Comencé trabajando en proyectos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde comencé con mi especialización en Machine Learning.
 
 Actualmente estoy interesado en Machine Learning, específicamente en MLOps y en la aplicación de IA generativa.
 
