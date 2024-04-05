@@ -27,7 +27,7 @@ website:
   comments:
     giscus:
       repo: hugojira/hublog
-      
+      language: es
 format:
   html:
     theme: flatly
