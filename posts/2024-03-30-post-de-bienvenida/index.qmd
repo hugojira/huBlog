@@ -11,6 +11,6 @@ image: "thumbnail.jpg"
 
 Próximamente estaré populando este sitio con entradas de blog y notas, con contenido relacionado a la ciencia de datos que espero también les sea de utilidad como a mí.
 
-Para la creación del primer esqueleto de este sitio web, me inspiré en los sitios de [Mike Mahoney](https://www.mm218.dev/), [Alison Hill](https://www.apreshill.com/), así como en la [documentación de Quarto](https://quarto.org/docs/gallery/#websites).
+Para la creación del primer esqueleto de este sitio web, me inspiré en los sitios de [Alison Hill](https://www.apreshill.com/), [Beatriz Milz](https://beamilz.com/), [Mike Mahoney](https://www.mm218.dev/), así como en la [documentación de Quarto](https://quarto.org/docs/gallery/#websites).
 
 Sin más que decir, les invito a explorar el blog.

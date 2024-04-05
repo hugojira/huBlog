@@ -11,5 +11,9 @@
     "items": [
       "/posts/2024-03-30-post-de-bienvenida/index.html"
     ]
+  },
+  {
+    "listing": "/proyectos/index.html",
+    "items": []
   }
 ]

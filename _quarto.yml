@@ -3,23 +3,31 @@ project:
   
 website:
   title: "HUGOJIRA"
+  site-url: "https://hugojira.com/"
   navbar:
     right:
       - text: "Home"
         href: index.qmd
       - text: "huBlog"
         href: blog.qmd
+      - text: "Proyectos"
+        href: proyectos/index.qmd
       - icon: github
-        href: https://github.com/hugojira
+        href: https://github.com/hugojira/hublog
   page-footer: 
-    left: 
-      - text: "© 2024 Hugo Valenzuela Chaparro · Hecho con Quarto"
-    right: 
-      - text: "Licencia"
+    left: "Sitio web hecho con [Quarto](https://quarto.org/), por Hugo Valenzuela Chaparro"
+    center:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/hugo-vach/
+      - icon: github
+        href: https://github.com/hugojira/
+    right:
+      - text: "Licencia: CC BY-SA 4.0"
         href: license.qmd
+
 format:
   html:
-    theme: materia
+    theme: flatly
     css: styles.css
     from: "markdown+emoji"
     

@@ -1,0 +1,18 @@
+---
+title: "Proyectos"
+lang: es
+margin-right: "Hugo Valenzuela"
+listing:
+  contents: proyectos
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: false
+---
+
+Aquí se encuentran los proyectos personales en los que he trabajado. No se incluyen aquellos proyectos en los que he colaborado en donde existan acuerdos de confidencialidad NDA.
+
+
