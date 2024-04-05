@@ -11,6 +11,7 @@ listing:
   filter-ui: false
 page-layout: full
 title-block-banner: false
+comments: false
 ---
 
 Aquí se encuentran los proyectos personales en los que he trabajado. No se incluyen aquellos proyectos en los que he colaborado en donde existan acuerdos de confidencialidad NDA.

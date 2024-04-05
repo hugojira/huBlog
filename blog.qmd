@@ -10,6 +10,7 @@ listing:
   filter-ui: false
 page-layout: full
 title-block-banner: false
+comments: false
 ---
 
 El contenido escrito aquí está relacionado con la ciencia de datos, por ende estará en español pero con muchas palabras en inglés.

@@ -1,3 +1,7 @@
+---
+comments: false
+---
+
 # CC BY-SA 4.0 DEED
 
 ## Atribución-CompartirIgual 4.0 Internacional

@@ -24,12 +24,15 @@ website:
     right:
       - text: "Licencia: CC BY-SA 4.0"
         href: license.qmd
-
+  comments:
+    giscus:
+      repo: hugojira/hublog
+      
 format:
   html:
     theme: flatly
     css: styles.css
     from: "markdown+emoji"
-    
+
 editor: visual
 
