@@ -53,21 +53,18 @@ La primera tendencia, fue un **aumento considerable de la sonoridad**, siendo me
 
 En la segunda tendencia, se encontró que **la duración de las canciones se reduce considerablemente conforme pasan los años**. Con lo que actualmente las canciones con corta duración son las que llegan a las listas de éxitos. Esto, por ejemplo, puede observarse comparando los diagramas de caja de 1970 y 2019 extraídos del dashboard:
 
-----------------------------------
+------------------------------------------------------------------------
 
 ![Duración de las canciones más populares de 1970](./figs/duracion_1970.png)
 
-----------------------------------
+------------------------------------------------------------------------
 
 ![Duración de las canciones más populares de 2019](./figs/duracion_2019.png)
 
 Para la tercera tendencia, se observa que **la característica de audio *Acústica* va disminuyendo conforme pasan los años**. Esto es un reflejo del avance de la tecnología e instrumentos y su incorporación en la música, pues recordemos que dicha característica de audio indica qué tan acústica es una canción.
 
-### Conclusiones
+## Conclusiones
 
 En conclusión, podemos ver que de las herramientas visuales dadas por un dashboard, se puede extraer información muy útil para tomar decisiones, en este caso en cómo realizar la producción de una canción para tener más probabilidad de llegar a los éxitos.
 
 Les agradezco su tiempo de lectura, cualquier comentario es bienvenido.
-
-
-
