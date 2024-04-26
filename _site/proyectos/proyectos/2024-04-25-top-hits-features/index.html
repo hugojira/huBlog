@@ -122,6 +122,7 @@ ul.task-list li input[type="checkbox"] {
                 <div class="quarto-category">Audio</div>
                 <div class="quarto-category">API</div>
                 <div class="quarto-category">Dashboard</div>
+                <div class="quarto-category">Shiny</div>
               </div>
                   </div>
   </div>
@@ -161,7 +162,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="descripción-general" class="level2">
 <h2 class="anchored" data-anchor-id="descripción-general">Descripción General</h2>
 <p>Para este proyecto de <strong>dashboard interactivo</strong>, se buscaba obtener patrón en las características de audio de las canciones más populares (Top Hits) desde 1970 a 2019. Esto con el objetivo de identificar la tendencia y ver cómo podría entrarse a esas listas de reproducción de popularidad.</p>
-<p><strong>Enlace al dashboard:</strong> <a href="https://hugojira.shinyapps.io/TopHits1970-2019/">https://hugojira.shinyapps.io/TopHits1970-2019/</a>.</p>
+<p>Para la construcción del dashboard, se utilizó R, con la librería <em>flexdashboard</em>, agregándole <em>shiny</em> para la interactividad.</p>
+<p><strong>Enlace al dashboard:</strong> <a href="https://hugojira.shinyapps.io/TopHits1970-2019/" class="uri">https://hugojira.shinyapps.io/TopHits1970-2019/</a>.</p>
 <p>El dashboard cuenta con 2 pestañas principales que se ven de la siguiente manera:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -197,8 +199,37 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="resultados" class="level2">
 <h2 class="anchored" data-anchor-id="resultados">Resultados</h2>
+<p>Se encontraron 3 tendencias principales analizando el cambio de las características de audio a través de los años.</p>
+<p>La primera tendencia, fue un <strong>aumento considerable de la sonoridad</strong>, siendo medido con el promedio de todas las canciones de cada año. Se observa que a partir del año 1990 la sonoridad sube, lo que hace referencia al fenómeno conocido como <strong>Loudness War (guerra del sonido)</strong>, en el que se intentaba sonar cada vez más fuerte en los masters de los discos. Se resume en la siguiente gráfica extraída del dashboard:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./figs/sonoridad.png" class="img-fluid figure-img"></p>
+<figcaption>Loudness War a partir de 1990</figcaption>
+</figure>
+</div>
+<p>En la segunda tendencia, se encontró que <strong>la duración de las canciones se reduce considerablemente conforme pasan los años</strong>. Con lo que actualmente las canciones con corta duración son las que llegan a las listas de éxitos. Esto, por ejemplo, puede observarse comparando los diagramas de caja de 1970 y 2019 extraídos del dashboard:</p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./figs/duracion_1970.png" class="img-fluid figure-img"></p>
+<figcaption>Duración de las canciones más populares de 1970</figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./figs/duracion_2019.png" class="img-fluid figure-img"></p>
+<figcaption>Duración de las canciones más populares de 2019</figcaption>
+</figure>
+</div>
+<p>Para la tercera tendencia, se observa que <strong>la característica de audio <em>Acústica</em> va disminuyendo conforme pasan los años</strong>. Esto es un reflejo del avance de la tecnología e instrumentos y su incorporación en la música, pues recordemos que dicha característica de audio indica qué tan acústica es una canción.</p>
+<section id="conclusiones" class="level3">
+<h3 class="anchored" data-anchor-id="conclusiones">Conclusiones</h3>
+<p>En conclusión, podemos ver que de las herramientas visuales dadas por un dashboard, se puede extraer información muy útil para tomar decisiones, en este caso en cómo realizar la producción de una canción para tener más probabilidad de llegar a los éxitos.</p>
+<p>Les agradezco su tiempo de lectura, cualquier comentario es bienvenido.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
