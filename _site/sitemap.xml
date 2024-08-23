@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hugojira.com/index.html</loc>
-    <lastmod>2024-08-04T16:33:43.990Z</lastmod>
+    <lastmod>2024-08-23T06:10:30.767Z</lastmod>
   </url>
   <url>
     <loc>https://hugojira.com/proyectos/index.html</loc>
-    <lastmod>2024-08-04T16:25:17.524Z</lastmod>
+    <lastmod>2024-08-23T06:11:28.960Z</lastmod>
   </url>
   <url>
     <loc>https://hugojira.com/blog.html</loc>
-    <lastmod>2024-08-04T16:25:17.508Z</lastmod>
+    <lastmod>2024-08-23T05:37:35.163Z</lastmod>
   </url>
   <url>
     <loc>https://hugojira.com/posts/2024-03-30-post-de-bienvenida/index.html</loc>
-    <lastmod>2024-08-04T16:25:17.508Z</lastmod>
+    <lastmod>2024-08-23T05:37:35.163Z</lastmod>
   </url>
   <url>
     <loc>https://hugojira.com/license.html</loc>
-    <lastmod>2024-08-04T16:25:17.508Z</lastmod>
+    <lastmod>2024-08-23T05:37:35.163Z</lastmod>
   </url>
   <url>
     <loc>https://hugojira.com/proyectos/proyectos/2024-04-25-top-hits-features/index.html</loc>
     <lastmod>2024-08-04T16:25:17.524Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hugojira.com/proyectos/2024-04-25-top-hits-features/index.html</loc>
+    <lastmod>2024-08-23T05:37:35.168Z</lastmod>
   </url>
 </urlset>

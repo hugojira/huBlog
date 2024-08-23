@@ -3,7 +3,7 @@ title: "Proyectos"
 lang: es
 margin-right: "Hugo Valenzuela"
 listing:
-  contents: proyectos
+  contents: ./
   sort: "date desc"
   type: grid
   categories: true
@@ -16,4 +16,4 @@ comments: false
 
 Aquí se encuentran los proyectos personales en los que he trabajado. No se incluyen aquellos proyectos en los que he colaborado en donde existan acuerdos de confidencialidad NDA.
 
------------------
+------------------------------------------------------------------------
