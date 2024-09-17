@@ -18,12 +18,12 @@ La regresión lineal puede parecer algo muy simple, pero en realidad tiene un al
 
 En este post, quiero enfocarme en la regresión lineal desde la perspectiva del machine learning, por lo que asume un conocimiento básico previo de éste. Cubrirá los siguientes puntos:
 
-* Qué es la regresión lineal en una y varias variables
-* Qué significa que la regresión lineal se puede aplicar mientras se tenga linealidad en los parámetros
-* Supuestos para la validez de la regresión lineal
-* Cómo se define la función de costo para la regresión lineal
-* Diferencia entre la solución cerrada para minimizar la función de costo y el método del gradiente descendiente
-* Métodos de regularización para regresión lineal y su interpretación geométrica
+-   Qué es la regresión lineal en una y varias variables
+-   Qué significa que la regresión lineal se puede aplicar mientras se tenga linealidad en los parámetros
+-   Supuestos para la validez de la regresión lineal
+-   Cómo se define la función de costo para la regresión lineal
+-   Diferencia entre la solución cerrada para minimizar la función de costo y el método del gradiente descendiente
+-   Métodos de regularización para regresión lineal y su interpretación geométrica
 
 Sin más por comentar en la introducción, comencemos con el post.
 
@@ -35,7 +35,7 @@ Es importante mencionar que, para evitar confusiones con la noción de indepenci
 
 El tipo de datos con los que la regresión trabaja son numéricos (flotantes), y vienen en duplas $(x_1, y_1), ... , (x_m, y_m)$, donde $m$ es la cantidad de datos que tengamos, es decir, cardinalidad del conjunto de datos. Nótese que se pueden tener múltiples características $x$.
 
-Para trabajar con regresión, si la dimensión lo permite, suele hacerse un diagrama de dispersión que es una gráfica de los datos representados como puntos. Por ejemplo, consideremos de $x$ e $y$, con 15 registros ($m = 15$), resultando el siguiente diagrama de dispersión 
+Para trabajar con regresión, si la dimensión lo permite, suele hacerse un diagrama de dispersión que es una gráfica de los datos representados como puntos. Por ejemplo, consideremos de $x$ e $y$, con 15 registros ($m = 15$), resultando el siguiente diagrama de dispersión
 
 ```{r, echo=FALSE, message=FALSE}
 set.seed(123123)
@@ -50,25 +50,23 @@ ggplot(data_lr,aes(x, y)) +
   coord_fixed(ratio = 1)
 ```
 
-En este caso, se ve claramente que los puntos tienen una tendencia lineal, esto es, que se les puede ajustar una recta para modelarlos con un error considerablemente bajo. 
-La ecuación de la recta, es $y = ax + b$, con $a$ la pendiente y $b$ la intersección en el eje $y$. Dicha ecuación discribiría adecuadamente ese comportamiento, en las siguientes secciones veremos cómo ajustarla a los datos para encontrar los valores adecuados de $a$ y $b$.
+En este caso, se ve claramente que los puntos tienen una tendencia lineal, esto es, que se les puede ajustar una recta para modelarlos con un error considerablemente bajo. La ecuación de la recta, es $y = ax + b$, con $a$ la pendiente y $b$ la intersección en el eje $y$. Dicha ecuación discribiría adecuadamente ese comportamiento, en las siguientes secciones veremos cómo ajustarla a los datos para encontrar los valores adecuados de $a$ y $b$.
 
-En este diagrama en partícular, los puntos fueron simulados de una recta $y = 2x$, a la que se les agregó un error $\varepsilon$ que tiene una distribución normal con media $\mu = 0$ y desviación estandar $\sigma = 1.5$. Teniendo así los parámetros de la recta $a = 2$ y $b = 0$ 
+En este diagrama en partícular, los puntos fueron simulados de una recta $y = 2x$, a la que se les agregó un error $\varepsilon$ que tiene una distribución normal con media $\mu = 0$ y desviación estandar $\sigma = 1.5$. Teniendo así los parámetros de la recta $a = 2$ y $b = 0$
 
 ### Obtención de datos para regresión
 
 Hay 3 maneras principales para obtener datos que puedan usarse en regresión, los cuales se listan a continuación
 
-- **Estudio retrospectivo:** Aquí se tienen datos que ya fueron capturados en el pasado, y no necesariamente con una intención de ser analizados científicamente, por lo que pueden no estar en la forma más ideal posible. Los datos y sus resultados ya se tienen, no se puede intervenir ni cambiar nada para mejorar la toma de datos. Este tipo de estudio es muy común en machine learning y big data, donde obtienes datos con ciertas características y ya etiquetados que fueron obtenidos en el pasado.
-- **Estudio observacional:** Como su nombre puede indicarlo, en este tipo de estudio solamente se observa el proceso o experimento que quiere analizarse, interviniendo mínimamente solamente para la captura de los datos. Por temas éticos, este estudio es muy usado en el área médica, pues de lo contrario se estaría imponiendo sobre las personas las condiciones que deben tener (como empezar a fumar, por ejemplo).
-- **Diseño experimental:** Este tipo de estudio posee más estrategia. Aquí se manipulan las variables predictoras (o características) de acuerdo a un diseño experimental, para tener ciertos valores y observar su efecto en la variable respuesta.
+-   **Estudio retrospectivo:** Aquí se tienen datos que ya fueron capturados en el pasado, y no necesariamente con una intención de ser analizados científicamente, por lo que pueden no estar en la forma más ideal posible. Los datos y sus resultados ya se tienen, no se puede intervenir ni cambiar nada para mejorar la toma de datos. Este tipo de estudio es muy común en machine learning y big data, donde obtienes datos con ciertas características y ya etiquetados que fueron obtenidos en el pasado.
+-   **Estudio observacional:** Como su nombre puede indicarlo, en este tipo de estudio solamente se observa el proceso o experimento que quiere analizarse, interviniendo mínimamente solamente para la captura de los datos. Por temas éticos, este estudio es muy usado en el área médica, pues de lo contrario se estaría imponiendo sobre las personas las condiciones que deben tener (como empezar a fumar, por ejemplo).
+-   **Diseño experimental:** Este tipo de estudio posee más estrategia. Aquí se manipulan las variables predictoras (o características) de acuerdo a un diseño experimental, para tener ciertos valores y observar su efecto en la variable respuesta.
 
 ## Regresión Lineal Simple
 
 La **regresión lineal simple** es útil cuando existe una tendencia lineal en los datos. Aunque veremos más adelante que va más allá de lo lineal. Se le llama simple porque solo hay una característica $x$, y se modela como
 
-$$y = w_0 + w_1 x + \varepsilon$$
-La cual puede verse como la ecuación de regresión lineal poblacional, no obstante, en regresión lineal trabajamos con $m$ número de datos, entonces para cada punto se tendrá una ecuación de regresión lineal muestral
+$$y = w_0 + w_1 x + \varepsilon$$ La cual puede verse como la ecuación de regresión lineal poblacional, no obstante, en regresión lineal trabajamos con $m$ número de datos, entonces para cada punto se tendrá una ecuación de regresión lineal muestral
 
 $$y_i = w_0 + w_1 x_i + \varepsilon_i \quad i=1, 2, 3, ..., m$$
 
@@ -93,15 +91,13 @@ w_1 <- round(lr$coefficients[[2]], 4)
 
 Obteniendo los coeficientes estimados $\hat{w_0} = `r w_0`$ y $\hat{w_1} = `r w_1`$. Teniendo así una ecuación de regresión lineal con la que podemos hacer predicciones
 
-$$ \hat{y} = `r w_0` + `r w_1` x$$
-Notemos que los parámetros reales de donde provienen los datos son $0$ y $2$, pero por la naturaleza estocástica de los errores, los estimados no coinciden con exactitud. Entre mayor sea el número de datos $m$, los parámetros estimados serán más cercanos a los originales.
+$$ \hat{y} = `r w_0` + `r w_1` x$$ Notemos que los parámetros reales de donde provienen los datos son $0$ y $2$, pero por la naturaleza estocástica de los errores, los estimados no coinciden con exactitud. Entre mayor sea el número de datos $m$, los parámetros estimados serán más cercanos a los originales.
 
 ## Regresión Lineal Múltiple
 
 Para el caso en que la variable respuesta $y$ está realcionada con $n$ variables regresoras, se tiene el modelo de la **regresión lineal múltiple**
 
-$$ y = w_0 + w_1x_1 + w_2x_2 + ... + w_nx_n + \varepsilon $$
-Así, a los parámetros $w_j \quad j = 0, 1, 2, ..., n$ se les llama *coeficientes de regresión*. Este modelo, al ser de multivariable, describe un hiperplano en el espacio $n$-dimensional de las variables regresoras $x$.
+$$ y = w_0 + w_1x_1 + w_2x_2 + ... + w_nx_n + \varepsilon $$ Así, a los parámetros $w_j \quad j = 0, 1, 2, ..., n$ se les llama *coeficientes de regresión*. Este modelo, al ser de multivariable, describe un hiperplano en el espacio $n$-dimensional de las variables regresoras $x$.
 
 Haciendo sentido de los parámetros. El parámetro $w_j$ representa el cambio esperado en la respuesta $y$ por unidad de cambio en $x_j$, cuando todo las demás variables regresoras $x_i(i\ne j)$ se mantienen constantes.Por otra parte, el parámetro $w_0$ es la intersección del hiperplano en $y$, si el dominio de los datos incluye $x_1 = x_2 = ... = x_n = 0$ entonces $w_0$ es la media de $y$ cuando $x_1 = x_2 = ... = x_n = 0$; de lo contrario, $w_0$ no tiene interpretación física.
 
@@ -113,24 +109,20 @@ Ya vimos que una regresión lineal de $n$ variables regresoras genera un hiperpl
 
 Como su nombre lo indica, la **regresión polinomial** de una variable $x$ se define a partir de los polinomios, y se modela de la siguiente forma
 
-$$ y = w_0 + w_1x + w_2x^2 + ... + w_nx^n + \varepsilon$$
-La cual es *lineal en los parámetros*, por lo que se puede trabajar como una regresión lineal múltiple y usar la misma metodología. Para hacer esto, podemos definir $x_j = x^j \quad j=1, 2, 3, ... , n$. Por ejemplo, para el caso de un polinomio de grado 2 con $y = w_0 + w_1x + w_2x^2 + \varepsilon$, tendríamos $x_1 = x, x_2 = x^2$ y la regresión se convertiría en una lineal múltiple
+$$ y = w_0 + w_1x + w_2x^2 + ... + w_nx^n + \varepsilon$$ La cual es *lineal en los parámetros*, por lo que se puede trabajar como una regresión lineal múltiple y usar la misma metodología. Para hacer esto, podemos definir $x_j = x^j \quad j=1, 2, 3, ... , n$. Por ejemplo, para el caso de un polinomio de grado 2 con $y = w_0 + w_1x + w_2x^2 + \varepsilon$, tendríamos $x_1 = x, x_2 = x^2$ y la regresión se convertiría en una lineal múltiple
 
-$$ y = w_0 + w_1x_1 + w_2x_2 + \varepsilon$$
-Con este tipo de regresión, hay que ser muy cuidadosos. Ya que un polinomio de grado considerablemente alto puede apróximar muy bien una curva no lineal, sin embargo, hay que tratar de hacer transformaciones y mantener el grado lo más bajo posible para evitar un sobreajuste del modelo (empezar a generalizar el error mismo).
+$$ y = w_0 + w_1x_1 + w_2x_2 + \varepsilon$$ Con este tipo de regresión, hay que ser muy cuidadosos. Ya que un polinomio de grado considerablemente alto puede apróximar muy bien una curva no lineal, sin embargo, hay que tratar de hacer transformaciones y mantener el grado lo más bajo posible para evitar un sobreajuste del modelo (empezar a generalizar el error mismo).
 
 ## Supuestos de la regresión lineal
 
 Es importante saber cuándo es prudente utilizar un modelo de regresión lineal. Para que se cumplan las condiciones de la regresión lineal simple y múltiple, se tienen los siguientes supuestos necesarios
 
-1. **Linealidad:** La relación entre las variables regresoras $x$ y la variable repuesta $y$ debe ser lineal. Notemos que en la regresión polinomial esto va más allá, necesitando solo linealidad en los parámetros.
-2. **Homocedasticidad:** Significa que la varianza de los errores es constante.
-3. **Normalidad de los errores:** Los residulales, es decir los errores, deben seguir una distribución normal con media 0 y varianza $\sigma^2$.
-4. **Errores independientes (no autocorrelación):** Los errores no deben estar correlacionados entre ellos, es otras palabras, deben ser independientes e idénticamente distribuidos.
-5. **No multicolinealidad:** No existe correlación entre las variables regresoras.
-6. **No exogeneidad:** Las variables regresoras y los errores no están correlacionados.
-
-
+1.  **Linealidad:** La relación entre las variables regresoras $x$ y la variable repuesta $y$ debe ser lineal. Notemos que en la regresión polinomial esto va más allá, necesitando solo linealidad en los parámetros.
+2.  **Homocedasticidad:** Significa que la varianza de los errores es constante.
+3.  **Normalidad de los errores:** Los residulales, es decir los errores, deben seguir una distribución normal con media 0 y varianza $\sigma^2$.
+4.  **Errores independientes (no autocorrelación):** Los errores no deben estar correlacionados entre ellos, es otras palabras, deben ser independientes e idénticamente distribuidos.
+5.  **No multicolinealidad:** No existe correlación entre las variables regresoras.
+6.  **No exogeneidad:** Las variables regresoras y los errores no están correlacionados.
 
 ## Mínimos cuadrados ordinarios como función de costo
 
@@ -138,8 +130,7 @@ En machine learning, la base para ajustar los parámetros a nuestros datos, lo q
 
 En la regresión lineal no es la excepción. Es muy conocido el *método de mínimos cuadrados* para ajustar los parámetros, donde se define la función de costo $J$ de *mínimos cuadrados ordinarios* (MCO) de la siguiente manera
 
-$$ J(y, \hat{y}) = \frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 $$
-Donde el factor $\frac{1}{m}$ se multiplica como una especie de promedio en todos los datos. Algunas referencias también manejan multiplicarlo por $\frac{1}{2}$ por conveniencia algebraica.
+$$ J(y, \hat{y}) = \frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 $$ Donde el factor $\frac{1}{m}$ se multiplica como una especie de promedio en todos los datos. Algunas referencias también manejan multiplicarlo por $\frac{1}{2}$ por conveniencia algebraica.
 
 Notemos que la diferencia $y_i - \hat{y}_i$ es la distancia que hay desde un punto $\hat{y} (x_i)$ en la recta de la predicción $\hat{y}$ hasta el correspondiente punto $y(x_i)$ en la recta original $y$ de donde provienen los datos. Está al cuadrado para evitar que las sumas de esos términos puedan dar cero. Así, podemos interpretarlo gráficamente como unos cuadrados en dichos puntos $x_i$, considerando el mismo diagrama de dispersión de este post, se vería
 
@@ -160,8 +151,7 @@ Nótese que los ejes fueron escalados para una mejor visualización. Ahora, al a
 
 Para minimizar dicha función, es mejor expresarla en término de los parámetros $w$, para esto, en el caso de una variable regresora sustituimos $\hat{y} = w_0 + w_1 x$ en la función de costo de MCO, así
 
-$$ J(w_0, w_1) = \frac{1}{m} \sum_{i=1}^{m} (y_i - w_0 - w_1 x_i)^2 $$
-En la siguiente sección veremos cómo minimizarla, ejemplificando el caso con una sola variable regresora $x$.
+$$ J(w_0, w_1) = \frac{1}{m} \sum_{i=1}^{m} (y_i - w_0 - w_1 x_i)^2 $$ En la siguiente sección veremos cómo minimizarla, ejemplificando el caso con una sola variable regresora $x$.
 
 ## Ajuste de los parámetros minimizando la función de costo
 
@@ -173,8 +163,7 @@ Mi objetivo de este post no es hacer demostraciones matemáticas ni cálculos co
 
 Para minimizar la función de costo, los estimados de los parámetros $w_0$, $w_1$, que son $\hat{w_0}$, $\hat{w_1}$ respectivamente, deben satisfacer
 
-$$ \frac{\partial J}{\partial w_0} \bigg|_{\hat{w_0}, \hat{w_1}}= - \frac{2}{m} \sum_{i=1}^{m} (y_i - \hat{w_0} - \hat{w_1} x_i) = 0$$
-y
+$$ \frac{\partial J}{\partial w_0} \bigg|_{\hat{w_0}, \hat{w_1}}= - \frac{2}{m} \sum_{i=1}^{m} (y_i - \hat{w_0} - \hat{w_1} x_i) = 0$$ y
 
 $$ \frac{\partial J}{\partial w_1} \bigg|_{\hat{w_0}, \hat{w_1}} = - \frac{2}{m} \sum_{i=1}^{m} (y_i - \hat{w_0} - \hat{w_1} x_i) x_i = 0$$
 
@@ -182,8 +171,7 @@ de acuerdo al criterio de la primer derivada, ésta debe ser 0 para que sea un m
 
 Simplificando las expresiones, separando las sumatorias y resolviendo para $\hat{w_0}$, $\hat{w_1}$, se tienen las soluciones a los parámetros estimados que minimizan la función de MCO
 
-$$ \hat{w_0} =  \bar{y} - \hat{w_1} \bar{x}$$
-y
+$$ \hat{w_0} =  \bar{y} - \hat{w_1} \bar{x}$$ y
 
 $$ \hat{w_1} = \frac{ \sum_{i=1}^{m} y_i x_i - \frac{(\sum_{i=1}^{m} y_i)(\sum_{i=1}^{m} x_i)}{n} }{ \sum_{i=1}^{m} x_i^2 - \frac{(\sum_{i=1}^{m}x_i)^2}{m} } $$
 
@@ -191,10 +179,9 @@ donde $\bar{x} = \frac{1}{m}  \sum_{i=1}^{m} x_i$ y $\bar{y} = \frac{1}{m}  \sum
 
 Para el caso multivariable, se tiene una solución de los parámetros estimados $W^{*}$ en forma matricial, dado por
 
-$$ W^{*} = (X^T X)^{-1} X^{T} Y $$
-Donde $X$ es la *matriz de diseño*, la cual es de tamaño $m \times (n + 1)$. Donde $m$ es el número de datos y $n$ el número de variables regresoras. Se construye poniendo en filas los vectores de datos $x_j = (1, x_{j1}, x_{j2}, ..., x_{jn})$, donde $j = 1, 2, 3, ..., m$, en todos los datos. Por otro lado, $Y$ es la matriz (o vector) de tamaño $m \times 1$, que se construye poniendo todos los puntos $y$ de donde se hará la regresión. 
+$$ W^{*} = (X^T X)^{-1} X^{T} Y $$ Donde $X$ es la *matriz de diseño*, la cual es de tamaño $m \times (n + 1)$. Donde $m$ es el número de datos y $n$ el número de variables regresoras. Se construye poniendo en filas los vectores de datos $x_j = (1, x_{j1}, x_{j2}, ..., x_{jn})$, donde $j = 1, 2, 3, ..., m$, en todos los datos. Por otro lado, $Y$ es la matriz (o vector) de tamaño $m \times 1$, que se construye poniendo todos los puntos $y$ de donde se hará la regresión.
 
-Así, 
+Así,
 
 $$ X = \begin{pmatrix}
 1 & x_{11} & x_{12} & ... & x_{1n} \\
@@ -202,7 +189,6 @@ $$ X = \begin{pmatrix}
  &  & \vdots &  &  \\
 1 & x_{m1} & x_{m2} & ... & x_{mn} 
 \end{pmatrix}  $$
-
 
 $$ Y = \begin{pmatrix}
 y_1 \\
@@ -218,16 +204,13 @@ Retomando conceptos de cálculo diferencial para una variable, la derivada de un
 
 El método del gradiente descendiente, las derivadas son respecto a los parámetros $w$ que queremos ajustar, y como su nombre lo indica, hace uso del gradiente para minimizar la función de costo $J(w)$. Para el caso de la regresión lineal, el algoritmo se define de la siguiente manera
 
-$$ w_i^{(\tau + 1)} := w_i^{(\tau)} - \alpha \frac{\partial J(w)}{\partial w_i}$$
-donde $J(w)$ esl función de costo de mínimos cuadrados ordinarios. La derivada está multiplicada por un $-1$, lo que asegura que se mueva en la dirección de menor crecimiento, tenemos que $\alpha$ es una constante llamada tasa de aprendizaje, controla qué tanto se ajusta el valor de $w_i$. En machine learning, $\alpha$ suele tomar valores muy pequeños, como $0.01, 0.001,$ etc. Por otro lado, $\tau$ es un número entero que indica en la iteración que estamos del algoritmo.
+$$ w_i^{(\tau + 1)} := w_i^{(\tau)} - \alpha \frac{\partial J(w)}{\partial w_i}$$ donde $J(w)$ esl función de costo de mínimos cuadrados ordinarios. La derivada está multiplicada por un $-1$, lo que asegura que se mueva en la dirección de menor crecimiento, tenemos que $\alpha$ es una constante llamada tasa de aprendizaje, controla qué tanto se ajusta el valor de $w_i$. En machine learning, $\alpha$ suele tomar valores muy pequeños, como $0.01, 0.001,$ etc. Por otro lado, $\tau$ es un número entero que indica en la iteración que estamos del algoritmo.
 
 Así, se estarán ajustando los parámetros $w_i$ de manera iterativa hasta que se cumpla un cierto criterio o se alcance una tolerancia del error. Cabe señalar que en la primera iteración, los parámetros se inicializan de manera aleatoria.
 
 Por lo tanto, para el caso de regresión lineal simple, si utilizamos el método del gradiente descendiente tendriamos lo siguiente
 
-$$ w_0^{(\tau + 1)} := w_0^{(\tau)} + \alpha \frac{2}{m} \sum_{i=1}^{m} (y_i - \hat{y_i})$$
-$$ w_1^{(\tau + 1)} := w_1^{(\tau)} + \alpha \frac{2}{m} \sum_{i=1}^{m} (y_i - \hat{y_i}) x_i$$
-Donde $\hat{y_i}$ son las predicciones en la iteración $\tau$, o sea antes de hacer la actualización de los parámetros.
+$$ w_0^{(\tau + 1)} := w_0^{(\tau)} + \alpha \frac{2}{m} \sum_{i=1}^{m} (y_i - \hat{y_i})$$ $$ w_1^{(\tau + 1)} := w_1^{(\tau)} + \alpha \frac{2}{m} \sum_{i=1}^{m} (y_i - \hat{y_i}) x_i$$ Donde $\hat{y_i}$ son las predicciones en la iteración $\tau$, o sea antes de hacer la actualización de los parámetros.
 
 ### ¿Cuál usar de los 2 métodos?
 
@@ -241,8 +224,7 @@ La regularización en regresión lineal, es para reducir la complejidad del mode
 
 La **regresión ridge** hace que los parámetros $w_i$ se encojan, es decir, que no tomen valores tan grandes. Se define con la siguiente función de costo $J_R(w)$
 
-$$ J_R(W) = \frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{n} w_j^2 $$
-Sumando así el término $\lambda \sum_{j=1}^{n} w_j^2$ de penalización. Donde $\lambda$ controla que tanto se encojen los parámetros, entre más grande es el valor de $\lambda$ están más límitados los parámetros. Se tiene que cuando $\lambda \xrightarrow{}{} \infty$, los parámetros $w_i$ tienden a $0$.
+$$ J_R(W) = \frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{n} w_j^2 $$ Sumando así el término $\lambda \sum_{j=1}^{n} w_j^2$ de penalización. Donde $\lambda$ controla que tanto se encojen los parámetros, entre más grande es el valor de $\lambda$ están más límitados los parámetros. Se tiene que cuando $\lambda \xrightarrow{}{} \infty$, los parámetros $w_i$ tienden a $0$.
 
 Notemos que el parámetro $w_0$ no se incluye, ya que solo se toma en cuenta $w_1, w_2, ..., w_n$. Eso es porque $w_0$, como ya vimos, es el valor promedio de $y$ cuando $x_1=x_2=...=x_n=0$. No sería conveniente imponer restricciones o encoger dicho parámetro entonces.
 
@@ -252,8 +234,7 @@ A la regresión ridge también se le conoce como *regularización L2*, debido a 
 
 La **regresión lasso** actúa como un selector de características, ya que impone que algunos de los parámetros $w_i$ sean igual a $0$. Se define con la siguiente función de costo $J_l(w)$
 
-$$ J_l(W) = \frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{n} |w_j| $$
-Sumando así el término $\lambda \sum_{j=1}^{n} |w_j|$ de penalización. Similarmente, lasso también hace que los parámetros se encojan hacía 0, pero a diferencia de ridge, si $\lambda$ es suficientemente grande algunos parámetros $w_i$ van a ser $0$. Así, la variable regresora (o característica) $x_i$ asociado al parámetro $w_i$ no estará involucrada en la ecuación de regresión, por esta razón lasso es un selector de características.
+$$ J_l(W) = \frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{n} |w_j| $$ Sumando así el término $\lambda \sum_{j=1}^{n} |w_j|$ de penalización. Similarmente, lasso también hace que los parámetros se encojan hacía 0, pero a diferencia de ridge, si $\lambda$ es suficientemente grande algunos parámetros $w_i$ van a ser $0$. Así, la variable regresora (o característica) $x_i$ asociado al parámetro $w_i$ no estará involucrada en la ecuación de regresión, por esta razón lasso es un selector de características.
 
 Igual que en el caso de regresión ridge, el parámetro $w_0$ no se incluye, ya que no sería conveniente imponer restricciones o hacer 0 el parámetro $w_0$, siendo que es es el valor promedio de $y$ cuando $x_1=x_2=...=x_n=0$.
 
@@ -275,23 +256,20 @@ Para el caso de ridge, tenemos la constricción el círculo $w_1^2 + w_2^2 \le s
 
 En este post, se vió cómo se define la regresión lineal en una y varias variables, y los supuestos que se deben cumplir para su utilización. Se explicó cómo minimizar su función de costo de mínimos cuadrados ordinarios en la manera clásica y con el método de gradiente descendiente. También, se vieron los métodos de regularización de regresión ridge y lasso, y cómo influyen en los parámetros encojiéndolos o haciendo algunos de ellos $0$, respectivamente.
 
-Como trabajo futuro, queda llevar este conocimiento a implementación en código, para ver su funcionalidad práctica. Existen librerías para hacer regresión lineal, ridge y lasso; en Python está ```scikit-learn```; mientras que en R tenemos ```stats``` y ```glmnet```.
+Como trabajo futuro, queda llevar este conocimiento a implementación en código, para ver su funcionalidad práctica. Existen librerías para hacer regresión lineal, ridge y lasso; en Python está `scikit-learn`; mientras que en R tenemos `stats` y `glmnet`.
 
 Recomiendo ampliamente revisar las referencias usadas para este post, hay conocimiento muy bueno en ellas.
 
 ## Referencias
 
-* Douglas C. Montgomery, Elizabeth A. Peck, G. Geoffrey Vining (2021). *Introduction to Linear Regression Analysis*. Sixth Edition.
+-   Douglas C. Montgomery, Elizabeth A. Peck, G. Geoffrey Vining (2021). *Introduction to Linear Regression Analysis*. Sixth Edition.
 
-* Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani (2023). *An Introduction to Statistical Learning
-with Applications in R*. 2nd Edition.
+-   Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani (2023). *An Introduction to Statistical Learning with Applications in R*. 2nd Edition.
 
-* Yunpeng Tai (2021). *A Survey Of Regression Algorithms And Connections With Deep Learning*.
+-   Yunpeng Tai (2021). *A Survey Of Regression Algorithms And Connections With Deep Learning*.
 
-* Mukul Ranjan (2022). *How does Lasso regression(L1) encourage zero coefficients but not the L2?*. Medium. [Post link](https://medium.com/@mukulranjan/how-does-lasso-regression-l1-encourage-zero-coefficients-but-not-the-l2-20e4893cba5d)
+-   Mukul Ranjan (2022). *How does Lasso regression(L1) encourage zero coefficients but not the L2?*. Medium. [Post link](https://medium.com/@mukulranjan/how-does-lasso-regression-l1-encourage-zero-coefficients-but-not-the-l2-20e4893cba5d)
 
-* Terence Parr. *A visual explanation for regularization of linear models*. Explained.ai. [Post link](https://explained.ai/regularization/index.html)
+-   Terence Parr. *A visual explanation for regularization of linear models*. Explained.ai. [Post link](https://explained.ai/regularization/index.html)
 
-* User: QuantStyle. *What is the computational cost of gradient descent vs linear regression?*. StackExchange. [Post link](https://stats.stackexchange.com/questions/407921/what-is-the-computational-cost-of-gradient-descent-vs-linear-regression)
-
-
+-   User: QuantStyle. *What is the computational cost of gradient descent vs linear regression?*. StackExchange. [Post link](https://stats.stackexchange.com/questions/407921/what-is-the-computational-cost-of-gradient-descent-vs-linear-regression)
