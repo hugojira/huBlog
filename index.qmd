@@ -26,15 +26,17 @@ from: markdown+emoji
 ::: column-page
 ## Bio
 
-Soy un científico de datos, físico de formación. Comencé trabajando en proyectos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde comencé con mi especialización en Machine Learning.
+Soy científico de datos, físico de formación. Comencé trabajando en proyectos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde proseguí con mi especialización en Machine Learning.
 
-Actualmente estoy interesado en Machine Learning, específicamente en MLOps y en la aplicación de IA generativa.
+Actualmente entre mis intereses están GenAI, Machine Learning, específicamente MLOps y su aplicación en audio. Visualización de datos y soluciones mediante dashboards.
 
-Este sitio web es mi portafolio, donde pueden encontrar mi [blog](blog.qmd). Bueno, en realidad, más que un blog se considerará mi jardín digital.
+Trabajo profesionalmente tanto con R como Python.
+
+Este sitio web es mi portafolio, donde pueden encontrar mi blog personal [huBlog](blog.qmd) (bueno, en realidad, más que un blog se considerará mi jardín digital) y mis [proyectos](proyectos/index.qmd).
 
 ## Experiencia
 
-Orbitware \| BI Support Engineer \| Enero 2023 - presente
+BI Support Engineer \@ **Orbtiware** \| Enero 2023 - presente
 
 ## Formación
 

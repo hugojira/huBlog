@@ -3,6 +3,7 @@ title: "huBlog"
 lang: es
 listing:
   contents: posts
+  fields: [image, date, title, subtitle, description, author, reading-time, categories]
   sort: "date desc"
   type: default
   categories: true
