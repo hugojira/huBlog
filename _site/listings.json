@@ -9,6 +9,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html",
       "/posts/la-regresion-lineal-en-machine-learning/index.html",
       "/posts/post-de-bienvenida/index.html"
     ]

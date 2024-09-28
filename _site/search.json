@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Hugo Valenzuela Chaparro",
     "section": "",
-    "text": "Soy científico de datos, físico de formación. Comencé trabajando en proyectos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde proseguí con mi especialización en Machine Learning.\nActualmente entre mis intereses están GenAI, Machine Learning, específicamente MLOps y su aplicación en audio. Visualización de datos y soluciones mediante dashboards.\nTrabajo profesionalmente tanto con R como Python.\nEste sitio web es mi portafolio, donde pueden encontrar mi blog personal huBlog (bueno, en realidad, más que un blog se considerará mi jardín digital) y mis proyectos.\n\n\n\nBI Support Engineer @ Orbtiware | Enero 2023 - presente\n\n\n\nUniversidad de Sonora | Licenciatura en Física | 📍 Hermosillo, Sonora, México | 2019\nUniversidad de Sonora | Maestría en Ciencia de Datos | 📍 Hermosillo, Sonora, México | 2023"
+    "text": "Soy científico de datos, físico de formación. Comencé trabajando en proyectos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde proseguí con mi especialización en Machine Learning.\nActualmente entre mis intereses están: GenAI, Machine Learning y su aplicación en audio, MLOps. Visualización de datos y soluciones mediante dashboards.\nTrabajo profesionalmente tanto con R como Python.\nEste sitio web es mi portafolio, donde pueden encontrar mi blog personal huBlog (bueno, en realidad, más que un blog se considerará mi jardín digital) y mis proyectos.\n\n\n\nBI Support Engineer @ Orbtiware | Enero 2023 - presente\n\n\n\nUniversidad de Sonora | Licenciatura en Física | 📍 Hermosillo, Sonora, México | 2019\nUniversidad de Sonora | Maestría en Ciencia de Datos | 📍 Hermosillo, Sonora, México | 2023"
   },
   {
     "objectID": "about.html",
@@ -18,7 +18,7 @@
     "href": "blog.html",
     "title": "huBlog",
     "section": "",
-    "text": "El contenido escrito aquí está relacionado con la ciencia de datos, por ende estará en español pero con muchas palabras en inglés.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLa Regresión Lineal en Machine Learning\n\n\n\n\n\n\nMachine Learning\n\n\nRegresión\n\n\n\nEl alcance de la regresión lineal en machine learning, su ajuste de parámetros con descenso del gradiente y métodos de regularización\n\n\n\n\n\n17 sept 2024\n\n\nHugo Valenzuela Chaparro\n\n\n20 minutos\n\n\n\n\n\n\n\n\n\n\n\n\nPost de bienvenida\n\n\n\n\n\n\nInfo\n\n\n\n\n\n\n\n\n\n27 mar 2024\n\n\nHugo Valenzuela Chaparro\n\n\n1 minutos\n\n\n\n\n\n\nNo hay resultados"
+    "text": "El contenido escrito aquí estará en español, pudiendo contener palabras en inglés.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5 Cosas que Aprendí en Física y Uso en Ciencia de Datos\n\n\n\n\n\n\nCiencia de Datos\n\n\nFísica\n\n\n\nConexiones de la física y la ciencia de datos\n\n\n\n\n\n28 sept 2024\n\n\nHugo Valenzuela Chaparro\n\n\n5 minutos\n\n\n\n\n\n\n\n\n\n\n\n\nLa Regresión Lineal en Machine Learning\n\n\n\n\n\n\nMachine Learning\n\n\nRegresión\n\n\n\nEl alcance de la regresión lineal en machine learning, su ajuste de parámetros con descenso del gradiente y métodos de regularización\n\n\n\n\n\n17 sept 2024\n\n\nHugo Valenzuela Chaparro\n\n\n20 minutos\n\n\n\n\n\n\n\n\n\n\n\n\nPost de bienvenida\n\n\n\n\n\n\nInfo\n\n\n\n\n\n\n\n\n\n27 mar 2024\n\n\nHugo Valenzuela Chaparro\n\n\n1 minutos\n\n\n\n\n\n\nNo hay resultados"
   },
   {
     "objectID": "index.html#education",
@@ -39,7 +39,7 @@
     "href": "index.html#bio",
     "title": "Hugo Valenzuela Chaparro",
     "section": "",
-    "text": "Soy científico de datos, físico de formación. Comencé trabajando en proyectos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde proseguí con mi especialización en Machine Learning.\nActualmente entre mis intereses están GenAI, Machine Learning, específicamente MLOps y su aplicación en audio. Visualización de datos y soluciones mediante dashboards.\nTrabajo profesionalmente tanto con R como Python.\nEste sitio web es mi portafolio, donde pueden encontrar mi blog personal huBlog (bueno, en realidad, más que un blog se considerará mi jardín digital) y mis proyectos."
+    "text": "Soy científico de datos, físico de formación. Comencé trabajando en proyectos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde proseguí con mi especialización en Machine Learning.\nActualmente entre mis intereses están: GenAI, Machine Learning y su aplicación en audio, MLOps. Visualización de datos y soluciones mediante dashboards.\nTrabajo profesionalmente tanto con R como Python.\nEste sitio web es mi portafolio, donde pueden encontrar mi blog personal huBlog (bueno, en realidad, más que un blog se considerará mi jardín digital) y mis proyectos."
   },
   {
     "objectID": "index.html#educación",
@@ -411,5 +411,54 @@
     "title": "La Regresión Lineal en Machine Learning",
     "section": "Referencias",
     "text": "Referencias\n\nDouglas C. Montgomery, Elizabeth A. Peck, G. Geoffrey Vining (2021). Introduction to Linear Regression Analysis. Sixth Edition.\nGareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani (2023). An Introduction to Statistical Learning with Applications in R. 2nd Edition.\nYunpeng Tai (2021). A Survey Of Regression Algorithms And Connections With Deep Learning.\nMukul Ranjan (2022). How does Lasso regression(L1) encourage zero coefficients but not the L2?. Medium. Post link\nTerence Parr. A visual explanation for regularization of linear models. Explained.ai. Post link\nUser: QuantStyle. What is the computational cost of gradient descent vs linear regression?. StackExchange. Post link"
+  },
+  {
+    "objectID": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html",
+    "href": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html",
+    "title": "5 Cosas que Aprendí en Física y Uso en Ciencia de Datos",
+    "section": "",
+    "text": "En este post voy a compartir 5 cosas que aprendí en física, que me han sido de utilidad en la ciencia de datos. Ya sea una metodología en particular o un concepto análogo. Desde las matemáticas del álgebra lineal y cálculo diferencial, hasta como la relatividad especial de Einstein me recordó al concepto de Big Data."
+  },
+  {
+    "objectID": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html#los-datos-son-lo-más-valioso",
+    "href": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html#los-datos-son-lo-más-valioso",
+    "title": "5 Cosas que Aprendí en Física y Uso en Ciencia de Datos",
+    "section": "Los datos son lo más valioso",
+    "text": "Los datos son lo más valioso\n\nGarbage in, garbage out.\n\nEn física los datos se obtienen de mediciones hechas en experimentos, ya sea directamente o indirectamente mediante observaciones. También está la posibilidad de las simulaciones computacionales. Lo que aprendí durante los laboratorios que cursé, es que los datos son lo más valioso.\nAl hacer experimentos, se debe procurar no perturbar el sistema en estudio para no inducir ruido en los datos, para que así las mediciones sean más cercanas a las reales, además de verificar que no estén influyendo factores externos. Similarmente en machine learning, los datos no deben tener sesgos que afecten el resultado de los modelos. En ambas disciplinas, si se quieren modelos y explicaciones sólidas, los datos tienen que ser más que buenos."
+  },
+  {
+    "objectID": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html#el-concepto-de-big-data-recuerda-a-la-relatividad-especial-de-einstein",
+    "href": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html#el-concepto-de-big-data-recuerda-a-la-relatividad-especial-de-einstein",
+    "title": "5 Cosas que Aprendí en Física y Uso en Ciencia de Datos",
+    "section": "El concepto de Big Data recuerda a la relatividad especial de Einstein",
+    "text": "El concepto de Big Data recuerda a la relatividad especial de Einstein\nLa mecánica clásica de Newton formula 3 leyes, de las cuales se derivan las ecuaciones de movimiento. Resolviendo dichas ecuaciones, se puede describir el movimiento de un objeto con su posición en función del tiempo, como lo son el movimiento de un paracaidista en caída libre, el de un tren o el de una pelota de baseball que va de home run.\nPara el año 1905, Albert Einstein desarrolló su teoría especial de la relatividad, la cual postula que la velocidad de la luz (denotada como c) es una constante universal. Esto tiene implicaciones en las ecuaciones de la mecánica clásica antes mencionadas, pues ya hay un límite en la velocidad máxima que se puede alcanzar, por lo que las fórmulas se tienen que ajustar para cuando las velocidades son muy cercanas a la de la luz. Usualmente esto resulta con un factor de multuplicación llamado gamma.\nAhora, Big Data surge cuando los datos son tan masivos que los métodos y tecnología convencionales no pueden procesar esa cantidad. Big Data suele definirse con las 3 V’s, Volumen, Velocidad y Variedad. Para solventar este problema, surgieron metodologías como MapReduce, tecnologías como Hadoop y Spark, además de los avances en el hardware de cómputo.\nAsí, Big Data me recuerda a la relatividad especial de Einstein, en el sentido que cuando traspasamos un cierto umbral (ya sea de cantidad de datos o de velocidad), tenemos que aprender a trabajar con nuevas metodologías y hacer ajustes a lo ya establecido."
+  },
+  {
+    "objectID": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html#el-método-científico-y-la-reproducibilidad",
+    "href": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html#el-método-científico-y-la-reproducibilidad",
+    "title": "5 Cosas que Aprendí en Física y Uso en Ciencia de Datos",
+    "section": "El método científico y la reproducibilidad",
+    "text": "El método científico y la reproducibilidad\nLa física utiliza el método científico para sus experimentos y teorías. En base a esto, cada experimento debe ser replicable si se tienen las mismas circunstancias. Esto asegura la solidez de una teoría.\nSimilarmente, en ciencia de datos todos los experimentos que se hagan con modelos deben ser replicables. Es por esto que el código es tan utilizado en esta área, ya que es más fácil de replicar todas las configuraciones y experimentos en código, que hacerlo mediante clicks donde se pueden perder pasos. Vaya, es por algo que ciencia de datos lleva el nombre ciencia."
+  },
+  {
+    "objectID": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html#los-modelos-son-representaciones-de-la-realidad",
+    "href": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html#los-modelos-son-representaciones-de-la-realidad",
+    "title": "5 cosas que aprendí en física y uso en ciencia de datos",
+    "section": "Los modelos son representaciones de la realidad",
+    "text": "Los modelos son representaciones de la realidad\n\nAll models are wrong, but some are useful. - George Box\n\nLos modelos que surgen de las teorías físicas que se fundamentan en experimentos, en realidad son representaciones aproximadas de la realidad. Pero pueden ser aproximaciones tan exactas que funcionan perfectamente. En física siempre puedes ajustar modelos tomando en cuenta o ignorando ciertos factores, y no siempre el modelo debe ser una representación idéntica a la realidad, si no que debe resolver el problema del sistema que se esté estudiando.\nSimilarmente en la ciencia de datos, en el machine learning, los modelos no van a ser una representación exacta de la tarea ala que se le esté ajustando al modelo. Siempre hay que tener en cuenta que el modelo aprende de los datos, generaliza patrones pero debe tenerse cuidado de no obviar que el modelo es una explicación de la realidad."
+  },
+  {
+    "objectID": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html#se-comparten-fundamentos-matemáticos",
+    "href": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html#se-comparten-fundamentos-matemáticos",
+    "title": "5 Cosas que Aprendí en Física y Uso en Ciencia de Datos",
+    "section": "Se comparten fundamentos matemáticos",
+    "text": "Se comparten fundamentos matemáticos\nLas matemáticas que aprendí en física sin duda alguna me han sido de gran utilidad en la ciencia de datos. Desde el cálculo, base de la mecánica clásica, o el álgebra lineal de la mecánica cuántica; que a su vez son fundamental para las computaciones y la optimización en ciencia de datos. Por ejemplo, en machine learning para entrenar un modelo hay que minimizar una función de costo con cálculo, así mismo, los modelos se definen mediante operaciones matriciales.\nNi hablar de la probabilidad y la estadística, que aprendí durante mi carrera en física, también son un pilar en ciencia de datos. Desde histogramas, diagramas de cajas, modelos estadísticos de regresión y clasificación, hasta el enfoque probabilístico del machine learning. Cabe resaltar que si se hace un cambio de carrera desde física a la ciencia de datos, las matemáticas serán un fuerte."
+  },
+  {
+    "objectID": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html#los-modelos-son-representaciones-aproximadas-de-la-realidad",
+    "href": "posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html#los-modelos-son-representaciones-aproximadas-de-la-realidad",
+    "title": "5 Cosas que Aprendí en Física y Uso en Ciencia de Datos",
+    "section": "Los modelos son representaciones aproximadas de la realidad",
+    "text": "Los modelos son representaciones aproximadas de la realidad\n\nAll models are wrong, but some are useful. - George Box\n\nLos modelos que surgen de las teorías físicas que se fundamentan en experimentos, en realidad son representaciones aproximadas de la realidad. Pero pueden ser aproximaciones tan exactas que funcionan perfectamente. En física siempre puedes crear modelos ignorando ciertos factores, y no siempre el modelo debe ser una representación idéntica a la realidad, si no que debe resolver el problema del sistema que se esté estudiando.\nSimilarmente en la ciencia de datos, en el machine learning, los modelos no van a ser una representación exacta de la tarea a la cual se estén ajustando. Siempre hay que tener en cuenta que el modelo aprende de los datos, generaliza patrones, pero debe tenerse cuidado de no obviar al modelo como una replica de la realidad."
   }
 ]

@@ -14,4 +14,4 @@ title-block-banner: false
 comments: false
 ---
 
-El contenido escrito aquí está relacionado con la ciencia de datos, por ende estará en español pero con muchas palabras en inglés.
+El contenido escrito aquí estará en español, pudiendo contener palabras en inglés.

@@ -1,0 +1,56 @@
+---
+title: "5 Cosas que Aprendí en Física y Uso en Ciencia de Datos"
+description: "Conexiones de la física y la ciencia de datos"
+lang: es
+author: "Hugo Valenzuela Chaparro"
+date: "2024-09-28"
+date-modified: "2024-09-28"
+categories: [Ciencia de Datos, Física]
+image: "fisica-cienciadedatos.jpg"
+toc: true
+toc-depth: 4
+draft: FALSE
+---
+
+En este post voy a compartir 5 cosas que aprendí en física, que me han sido de utilidad en la ciencia de datos. Ya sea una metodología en particular o un concepto análogo. Desde las matemáticas del álgebra lineal y cálculo diferencial, hasta como la relatividad especial de Einstein me recordó al concepto de Big Data.
+
+## Los datos son lo más valioso
+
+> Garbage in, garbage out.
+
+En física los datos se obtienen de mediciones hechas en experimentos, ya sea directamente o indirectamente mediante observaciones. También está la posibilidad de las simulaciones computacionales. Lo que aprendí durante los laboratorios que cursé, es que **los datos son lo más valioso**.
+
+Al hacer experimentos, se debe procurar no perturbar el sistema en estudio para no inducir ruido en los datos, para que así las mediciones sean más cercanas a las reales, además de verificar que no estén influyendo factores externos. Similarmente en machine learning, los datos no deben tener sesgos que afecten el resultado de los modelos. En ambas disciplinas, si se quieren modelos y explicaciones sólidas, los datos tienen que ser más que buenos.
+
+## El concepto de Big Data recuerda a la relatividad especial de Einstein
+
+La mecánica clásica de Newton formula 3 leyes, de las cuales se derivan las ecuaciones de movimiento. Resolviendo dichas ecuaciones, se puede describir el movimiento de un objeto con su posición en función del tiempo, como lo son el movimiento de un paracaidista en caída libre, el de un tren o el de una pelota de baseball que va de home run.
+
+Para el año 1905, Albert Einstein desarrolló su **teoría especial de la relatividad**, la cual postula que la velocidad de la luz (denotada como c) es una constante universal. Esto tiene implicaciones en las ecuaciones de la mecánica clásica antes mencionadas, pues ya hay un límite en la velocidad máxima que se puede alcanzar, por lo que las fórmulas se tienen que ajustar para cuando las velocidades son muy cercanas a la de la luz. Usualmente esto resulta con un factor de multuplicación llamado gamma.
+
+Ahora, **Big Data** surge cuando los datos son tan masivos que los métodos y tecnología convencionales no pueden procesar esa cantidad. Big Data suele definirse con las 3 V's, **Volumen**, **Velocidad** y **Variedad**. Para solventar este problema, surgieron metodologías como MapReduce, tecnologías como Hadoop y Spark, además de los avances en el hardware de cómputo.
+
+Así, Big Data me recuerda a la relatividad especial de Einstein, en el sentido que cuando traspasamos un cierto umbral (ya sea de cantidad de datos o de velocidad), tenemos que aprender a trabajar con nuevas metodologías y hacer ajustes a lo ya establecido.
+
+## El método científico y la reproducibilidad
+
+La física utiliza el método científico para sus experimentos y teorías. En base a esto, cada experimento debe ser replicable si se tienen las mismas circunstancias. Esto asegura la solidez de una teoría.
+
+Similarmente, en **ciencia de datos todos los experimentos que se hagan con modelos deben ser replicables**. Es por esto que el código es tan utilizado en esta área, ya que es más fácil de replicar todas las configuraciones y experimentos en código, que hacerlo mediante clicks donde se pueden perder pasos. Vaya, es por algo que ciencia de datos lleva el nombre ciencia.
+
+## Los modelos son representaciones aproximadas de la realidad
+
+> All models are wrong, but some are useful. - George Box
+
+Los modelos que surgen de las teorías físicas que se fundamentan en experimentos, en realidad son **representaciones aproximadas de la realidad**. Pero pueden ser aproximaciones tan exactas que funcionan perfectamente. En física siempre puedes crear modelos ignorando ciertos factores, y no siempre el modelo debe ser una representación idéntica a la realidad, si no que debe resolver el problema del sistema que se esté estudiando.
+
+Similarmente en la ciencia de datos, en el machine learning, los modelos no van a ser una representación exacta de la tarea a la cual se estén ajustando. Siempre hay que tener en cuenta que el modelo aprende de los datos, generaliza patrones, pero debe tenerse cuidado de no obviar al modelo como una replica de la realidad.
+
+## Se comparten fundamentos matemáticos
+
+Las matemáticas que aprendí en física sin duda alguna me han sido de gran utilidad en la ciencia de datos. Desde el **cálculo**, base de la mecánica clásica, o el **álgebra lineal** de la mecánica cuántica; que a su vez son fundamental para las computaciones y la optimización en ciencia de datos. Por ejemplo, en machine learning para entrenar un modelo hay que minimizar una función de costo con cálculo, así mismo, los modelos se definen mediante operaciones matriciales.
+
+Ni hablar de la **probabilidad** y la **estadística**, que aprendí durante mi carrera en física, también son un pilar en ciencia de datos. Desde histogramas, diagramas de cajas, modelos estadísticos de regresión y clasificación, hasta el enfoque probabilístico del machine learning. Cabe resaltar que si se hace un cambio de carrera desde física a la ciencia de datos, las matemáticas serán un fuerte.
+
+
+

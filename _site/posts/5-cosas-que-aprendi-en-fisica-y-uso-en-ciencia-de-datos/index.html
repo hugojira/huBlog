@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Hugo Valenzuela Chaparro">
+<meta name="description" content="Conexiones de la física y la ciencia de datos">
 
-<title>HUGOJIRA - huBlog</title>
+<title>HUGOJIRA - 5 Cosas que Aprendí en Física y Uso en Ciencia de Datos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,77 +69,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle','listing-description','listing-author','listing-reading-time','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">HUGOJIRA</span>
     </a>
   </div>
@@ -150,15 +92,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">huBlog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./proyectos/index.html"> 
+    <a class="nav-link" href="../../proyectos/index.html"> 
 <span class="menu-text">Proyectos</span></a>
   </li>  
   <li class="nav-item compact">
@@ -174,160 +116,110 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">5 Cosas que Aprendí en Física y Uso en Ciencia de Datos</h1>
+                  <div>
+        <div class="description">
+          Conexiones de la física y la ciencia de datos
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Ciencia de Datos</div>
+                <div class="quarto-category">Física</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor/a</div>
+      <div class="quarto-title-meta-contents">
+               <p>Hugo Valenzuela Chaparro </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Fecha de publicación</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">28 de septiembre de 2024</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Fecha de modificación</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">28 de septiembre de 2024</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Ciencia de Datos">Ciencia de Datos <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Física">Física <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Info">Info <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Machine Learning">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Regresión">Regresión <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#los-datos-son-lo-más-valioso" id="toc-los-datos-son-lo-más-valioso" class="nav-link active" data-scroll-target="#los-datos-son-lo-más-valioso">Los datos son lo más valioso</a></li>
+  <li><a href="#el-concepto-de-big-data-recuerda-a-la-relatividad-especial-de-einstein" id="toc-el-concepto-de-big-data-recuerda-a-la-relatividad-especial-de-einstein" class="nav-link" data-scroll-target="#el-concepto-de-big-data-recuerda-a-la-relatividad-especial-de-einstein">El concepto de Big Data recuerda a la relatividad especial de Einstein</a></li>
+  <li><a href="#el-método-científico-y-la-reproducibilidad" id="toc-el-método-científico-y-la-reproducibilidad" class="nav-link" data-scroll-target="#el-método-científico-y-la-reproducibilidad">El método científico y la reproducibilidad</a></li>
+  <li><a href="#los-modelos-son-representaciones-aproximadas-de-la-realidad" id="toc-los-modelos-son-representaciones-aproximadas-de-la-realidad" class="nav-link" data-scroll-target="#los-modelos-son-representaciones-aproximadas-de-la-realidad">Los modelos son representaciones aproximadas de la realidad</a></li>
+  <li><a href="#se-comparten-fundamentos-matemáticos" id="toc-se-comparten-fundamentos-matemáticos" class="nav-link" data-scroll-target="#se-comparten-fundamentos-matemáticos">Se comparten fundamentos matemáticos</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">huBlog</h1>
-</div>
-
-
-
-<div class="quarto-title-meta column-page-left">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>El contenido escrito aquí estará en español, pudiendo contener palabras en inglés.</p>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Ciencia de Datos,Física" data-listing-date-sort="1727506800000" data-listing-file-modified-sort="1727547928511" data-listing-date-modified-sort="1727506800000" data-listing-reading-time-sort="5" data-listing-word-count-sort="812">
-<div class="thumbnail">
-<p><a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external"></a></p><a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external">
-<p><img src="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/fisica-cienciadedatos.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external">5 Cosas que Aprendí en Física y Uso en Ciencia de Datos</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Ciencia de Datos'); return false;">
-Ciencia de Datos
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Física'); return false;">
-Física
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external">Conexiones de la física y la ciencia de datos</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external">
-<div class="listing-date">
-28 sept 2024
-</div>
-<div class="listing-author">
-Hugo Valenzuela Chaparro
-</div>
-<div class="listing-reading-time">
-5 minutos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Machine Learning,Regresión" data-listing-date-sort="1726556400000" data-listing-file-modified-sort="1726618258416" data-listing-date-modified-sort="1726556400000" data-listing-reading-time-sort="20" data-listing-word-count-sort="3958">
-<div class="thumbnail">
-<p><a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external"></a></p><a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external">
-<p><img src="./posts/la-regresion-lineal-en-machine-learning/mco.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external">La Regresión Lineal en Machine Learning</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Regresión'); return false;">
-Regresión
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external">El alcance de la regresión lineal en machine learning, su ajuste de parámetros con descenso del gradiente y métodos de regularización</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external">
-<div class="listing-date">
-17 sept 2024
-</div>
-<div class="listing-author">
-Hugo Valenzuela Chaparro
-</div>
-<div class="listing-reading-time">
-20 minutos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Info" data-listing-date-sort="1711522800000" data-listing-file-modified-sort="1726292853090" data-listing-date-modified-sort="1711522800000" data-listing-reading-time-sort="1" data-listing-word-count-sort="115">
-<div class="thumbnail">
-<p><a href="./posts/post-de-bienvenida/index.html" class="no-external"></a></p><a href="./posts/post-de-bienvenida/index.html" class="no-external">
-<p><img src="./posts/post-de-bienvenida/thumbnail.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-de-bienvenida/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-de-bienvenida/index.html" class="no-external">Post de bienvenida</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-de-bienvenida/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Info'); return false;">
-Info
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post-de-bienvenida/index.html" class="no-external">¡Hola! Les doy la bienvenida a este primer post. Este blog en realidad es un jardín digital, esto quiere decir que es un espacio para almacenar mis notas de aprendizaje, así…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post-de-bienvenida/index.html" class="no-external">
-<div class="listing-date">
-27 mar 2024
-</div>
-<div class="listing-author">
-Hugo Valenzuela Chaparro
-</div>
-<div class="listing-reading-time">
-1 minutos
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No hay resultados
-</div>
-</div></main> <!-- /main -->
+
+<p>En este post voy a compartir 5 cosas que aprendí en física, que me han sido de utilidad en la ciencia de datos. Ya sea una metodología en particular o un concepto análogo. Desde las matemáticas del álgebra lineal y cálculo diferencial, hasta como la relatividad especial de Einstein me recordó al concepto de Big Data.</p>
+<section id="los-datos-son-lo-más-valioso" class="level2">
+<h2 class="anchored" data-anchor-id="los-datos-son-lo-más-valioso">Los datos son lo más valioso</h2>
+<blockquote class="blockquote">
+<p>Garbage in, garbage out.</p>
+</blockquote>
+<p>En física los datos se obtienen de mediciones hechas en experimentos, ya sea directamente o indirectamente mediante observaciones. También está la posibilidad de las simulaciones computacionales. Lo que aprendí durante los laboratorios que cursé, es que <strong>los datos son lo más valioso</strong>.</p>
+<p>Al hacer experimentos, se debe procurar no perturbar el sistema en estudio para no inducir ruido en los datos, para que así las mediciones sean más cercanas a las reales, además de verificar que no estén influyendo factores externos. Similarmente en machine learning, los datos no deben tener sesgos que afecten el resultado de los modelos. En ambas disciplinas, si se quieren modelos y explicaciones sólidas, los datos tienen que ser más que buenos.</p>
+</section>
+<section id="el-concepto-de-big-data-recuerda-a-la-relatividad-especial-de-einstein" class="level2">
+<h2 class="anchored" data-anchor-id="el-concepto-de-big-data-recuerda-a-la-relatividad-especial-de-einstein">El concepto de Big Data recuerda a la relatividad especial de Einstein</h2>
+<p>La mecánica clásica de Newton formula 3 leyes, de las cuales se derivan las ecuaciones de movimiento. Resolviendo dichas ecuaciones, se puede describir el movimiento de un objeto con su posición en función del tiempo, como lo son el movimiento de un paracaidista en caída libre, el de un tren o el de una pelota de baseball que va de home run.</p>
+<p>Para el año 1905, Albert Einstein desarrolló su <strong>teoría especial de la relatividad</strong>, la cual postula que la velocidad de la luz (denotada como c) es una constante universal. Esto tiene implicaciones en las ecuaciones de la mecánica clásica antes mencionadas, pues ya hay un límite en la velocidad máxima que se puede alcanzar, por lo que las fórmulas se tienen que ajustar para cuando las velocidades son muy cercanas a la de la luz. Usualmente esto resulta con un factor de multuplicación llamado gamma.</p>
+<p>Ahora, <strong>Big Data</strong> surge cuando los datos son tan masivos que los métodos y tecnología convencionales no pueden procesar esa cantidad. Big Data suele definirse con las 3 V’s, <strong>Volumen</strong>, <strong>Velocidad</strong> y <strong>Variedad</strong>. Para solventar este problema, surgieron metodologías como MapReduce, tecnologías como Hadoop y Spark, además de los avances en el hardware de cómputo.</p>
+<p>Así, Big Data me recuerda a la relatividad especial de Einstein, en el sentido que cuando traspasamos un cierto umbral (ya sea de cantidad de datos o de velocidad), tenemos que aprender a trabajar con nuevas metodologías y hacer ajustes a lo ya establecido.</p>
+</section>
+<section id="el-método-científico-y-la-reproducibilidad" class="level2">
+<h2 class="anchored" data-anchor-id="el-método-científico-y-la-reproducibilidad">El método científico y la reproducibilidad</h2>
+<p>La física utiliza el método científico para sus experimentos y teorías. En base a esto, cada experimento debe ser replicable si se tienen las mismas circunstancias. Esto asegura la solidez de una teoría.</p>
+<p>Similarmente, en <strong>ciencia de datos todos los experimentos que se hagan con modelos deben ser replicables</strong>. Es por esto que el código es tan utilizado en esta área, ya que es más fácil de replicar todas las configuraciones y experimentos en código, que hacerlo mediante clicks donde se pueden perder pasos. Vaya, es por algo que ciencia de datos lleva el nombre ciencia.</p>
+</section>
+<section id="los-modelos-son-representaciones-aproximadas-de-la-realidad" class="level2">
+<h2 class="anchored" data-anchor-id="los-modelos-son-representaciones-aproximadas-de-la-realidad">Los modelos son representaciones aproximadas de la realidad</h2>
+<blockquote class="blockquote">
+<p>All models are wrong, but some are useful. - George Box</p>
+</blockquote>
+<p>Los modelos que surgen de las teorías físicas que se fundamentan en experimentos, en realidad son <strong>representaciones aproximadas de la realidad</strong>. Pero pueden ser aproximaciones tan exactas que funcionan perfectamente. En física siempre puedes crear modelos ignorando ciertos factores, y no siempre el modelo debe ser una representación idéntica a la realidad, si no que debe resolver el problema del sistema que se esté estudiando.</p>
+<p>Similarmente en la ciencia de datos, en el machine learning, los modelos no van a ser una representación exacta de la tarea a la cual se estén ajustando. Siempre hay que tener en cuenta que el modelo aprende de los datos, generaliza patrones, pero debe tenerse cuidado de no obviar al modelo como una replica de la realidad.</p>
+</section>
+<section id="se-comparten-fundamentos-matemáticos" class="level2">
+<h2 class="anchored" data-anchor-id="se-comparten-fundamentos-matemáticos">Se comparten fundamentos matemáticos</h2>
+<p>Las matemáticas que aprendí en física sin duda alguna me han sido de gran utilidad en la ciencia de datos. Desde el <strong>cálculo</strong>, base de la mecánica clásica, o el <strong>álgebra lineal</strong> de la mecánica cuántica; que a su vez son fundamental para las computaciones y la optimización en ciencia de datos. Por ejemplo, en machine learning para entrenar un modelo hay que minimizar una función de costo con cálculo, así mismo, los modelos se definen mediante operaciones matriciales.</p>
+<p>Ni hablar de la <strong>probabilidad</strong> y la <strong>estadística</strong>, que aprendí durante mi carrera en física, también son un pilar en ciencia de datos. Desde histogramas, diagramas de cajas, modelos estadísticos de regresión y clasificación, hasta el enfoque probabilístico del machine learning. Cabe resaltar que si se hace un cambio de carrera desde física a la ciencia de datos, las matemáticas serán un fuerte.</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -737,6 +629,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="hugojira/hublog" data-repo-id="R_kgDOLombnQ" data-category="General" data-category-id="DIC_kwDOLombnc4CeewM" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="es" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -762,7 +658,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./license.html">
+    <a class="nav-link" href="../../license.html">
 <p>Licencia: CC BY-SA 4.0</p>
 </a>
   </li>  
