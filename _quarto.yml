@@ -5,6 +5,7 @@ website:
   title: "HUGOJIRA"
   favicon: favicon.png
   site-url: "https://hugojira.com/"
+  open-graph: true
   navbar:
     right:
       - text: "Home"
