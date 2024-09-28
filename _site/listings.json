@@ -1,12 +1,5 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
-    ]
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html",
