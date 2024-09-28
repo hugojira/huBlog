@@ -32,7 +32,9 @@ website:
       language: es
 format:
   html:
-    theme: flatly
+    theme:
+      light: flatly
+      dark: darkly
     css: styles.css
     from: "markdown+emoji"
 
