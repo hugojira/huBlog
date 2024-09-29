@@ -3,7 +3,7 @@ project:
   
 website:
   title: "HUGOJIRA"
-  favicon: favicon.png
+  favicon: "favicon.png"
   site-url: "https://hugojira.com/"
   open-graph: true
   navbar:
@@ -16,6 +16,7 @@ website:
         href: proyectos/index.qmd
       - icon: github
         href: https://github.com/hugojira/hublog
+    logo: "HV_logo.png"
   page-footer: 
     left: "Sitio web hecho con [Quarto](https://quarto.org/), por Hugo Valenzuela Chaparro"
     center:
