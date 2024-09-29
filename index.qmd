@@ -1,8 +1,10 @@
 ---
 title: "Hugo Valenzuela Chaparro"
-image: avatar.jpg
+subtitle: "Científico de Datos" 
+image: "avatar.jpg"
 about:
-  template: trestles
+  id: about-index
+  template: jolla
   links:
     - text: LinkedIn
       icon: linkedin
@@ -23,24 +25,7 @@ comments: false
 from: markdown+emoji
 ---
 
-::: column-page
-## Bio
-
-Soy **científico de datos**, físico de formación. Comencé trabajando en proyectos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde proseguí con mi especialización en Machine Learning.
-
-Actualmente entre mis **intereses** están: GenAI, Machine Learning y su aplicación en audio, MLOps. Visualización de datos y soluciones mediante dashboards.
-
-Trabajo profesionalmente tanto con R como Python.
-
-Este sitio web es mi **portafolio**, donde pueden encontrar mi blog personal [huBlog](blog.qmd) (bueno, en realidad, más que un blog se considerará mi jardín digital) y mis [proyectos](proyectos/index.qmd).
-
-## Experiencia
-
-BI Support Engineer \@ **Orbtiware** \| Enero 2023 - presente
-
-## Formación
-
-Universidad de Sonora \| Licenciatura en Física \| :round_pushpin: Hermosillo, Sonora, México \| 2019
-
-Universidad de Sonora \| Maestría en Ciencia de Datos \| :round_pushpin: Hermosillo, Sonora, México \| 2023
+:::{#about-index}
+* Este sitio web es mi **portafolio**, con mi blog personal [huBlog](blog.qmd) y mis [proyectos](proyectos/index.qmd).
+* Más información sobre mí [aquí](about.qmd).
 :::

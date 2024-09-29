@@ -14,6 +14,8 @@ website:
         href: blog.qmd
       - text: "Proyectos"
         href: proyectos/index.qmd
+      - text: "Acerca De"
+        href: about.qmd
       - icon: github
         href: https://github.com/hugojira/hublog
     logo: "HV_logo.png"

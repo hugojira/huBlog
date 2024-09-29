@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.552">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HUGOJIRA - huBlog</title>
+<title>HUGOJIRA - Hugo Valenzuela Chaparro</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,12 +31,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -58,87 +55,29 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "Sin resultados",
-    "search-matching-documents-text": "documentos encontrados",
-    "search-copy-link-title": "Copiar el enlace en la búsqueda",
-    "search-hide-matches-text": "Ocultar resultados adicionales",
-    "search-more-match-text": "resultado adicional en este documento",
-    "search-more-matches-text": "resultados adicionales en este documento",
-    "search-clear-button-title": "Borrar",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Buscar"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle','listing-description','listing-author','listing-reading-time','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="HUGOJIRA - huBlog">
+<meta property="og:title" content="HUGOJIRA - Hugo Valenzuela Chaparro">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://hugojira.com/posts/post-de-bienvenida/thumbnail.jpg">
+<meta property="og:image" content="https://hugojira.com/avatar.jpg">
 <meta property="og:site_name" content="HUGOJIRA">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -152,8 +91,8 @@ window.Quarto = {
     <span class="navbar-title">HUGOJIRA</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Buscar"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -163,7 +102,7 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">huBlog</span></a>
   </li>  
   <li class="nav-item">
@@ -171,7 +110,7 @@ window.Quarto = {
 <span class="menu-text">Proyectos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">Acerca De</span></a>
   </li>  
   <li class="nav-item compact">
@@ -182,166 +121,62 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Ciencia de Datos">Ciencia de Datos <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Física">Física <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Info">Info <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Machine Learning">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Regresión">Regresión <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-solana column-body content">
+  <div class="about-entity">
+    <div class="entity-contents">
+      <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">huBlog</h1>
+<h1 class="title">Hugo Valenzuela Chaparro</h1>
 </div>
-
-
-
-<div class="quarto-title-meta column-page-left">
-
-    
-  
-    
+<div class="quarto-title-meta">
   </div>
-  
+</header> <div class="about-links">
+  <a href="https://www.linkedin.com/in/hugo-vach/" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+  <a href="https://github.com/hugojira" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
+</div>
+      <div class="about-contents"><main class="content" id="quarto-document-content">
+<section id="bio" class="level2">
+<h2 data-anchor-id="bio">Bio</h2>
+<p>Soy <strong>científico de datos</strong>, físico de formación. Comencé trabajando en proyectos de consultoría estadística en la universidad, relacionados con la minería y el manejo de las islas de calor en ciudades, fue ahí donde me enamoré de la ciencia de datos usando R. Posteriormente cursé la maestría en ciencia de datos, en la Universidad de Sonora, donde proseguí con mi especialización en Machine Learning.</p>
+<p>Actualmente entre mis <strong>intereses</strong> están: GenAI, Machine Learning y su aplicación en audio, MLOps. Visualización de datos y soluciones mediante dashboards.</p>
+<p>Trabajo profesionalmente tanto con R como Python.</p>
+<p>Este sitio web es mi <strong>portafolio</strong>, donde pueden encontrar mi blog personal <a href="./blog.html">huBlog</a> (bueno, en realidad, más que un blog se considerará mi jardín digital) y mis <a href="./proyectos/index.html">proyectos</a>.</p>
+</section>
+<section id="experiencia" class="level2">
+<h2 data-anchor-id="experiencia">Experiencia</h2>
+<p>BI Support Engineer @ <strong>Orbtiware</strong> | Enero 2023 - presente</p>
+</section>
+<section id="formación" class="level2">
+<h2 data-anchor-id="formación">Formación</h2>
+<p>Universidad de Sonora | Licenciatura en Física | <span class="emoji" data-emoji="round_pushpin">📍</span> Hermosillo, Sonora, México | 2019</p>
+<p>Universidad de Sonora | Maestría en Ciencia de Datos | <span class="emoji" data-emoji="round_pushpin">📍</span> Hermosillo, Sonora, México | 2023</p>
 
 
-</header>
-
-
-<p>El contenido escrito aquí estará en español, pudiendo contener palabras en inglés.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Ciencia de Datos,Física" data-listing-date-sort="1727506800000" data-listing-file-modified-sort="1727547928511" data-listing-date-modified-sort="1727506800000" data-listing-reading-time-sort="5" data-listing-word-count-sort="812">
-<div class="thumbnail">
-<p><a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external"></a></p><a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external">
-<p><img src="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/fisica-cienciadedatos.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external"></a></p>
+</section>
+</main></div>
+    </div>
+    <img src="avatar.jpg" class="about-image
+  rounded " style="width: 15em;">
+  </div>
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external">5 Cosas que Aprendí en Física y Uso en Ciencia de Datos</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Ciencia de Datos'); return false;">
-Ciencia de Datos
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Física'); return false;">
-Física
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external">Conexiones de la física y la ciencia de datos</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/5-cosas-que-aprendi-en-fisica-y-uso-en-ciencia-de-datos/index.html" class="no-external">
-<div class="listing-date">
-28 sept 2024
-</div>
-<div class="listing-author">
-Hugo Valenzuela Chaparro
-</div>
-<div class="listing-reading-time">
-5 minutos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Machine Learning,Regresión" data-listing-date-sort="1726556400000" data-listing-file-modified-sort="1726618258416" data-listing-date-modified-sort="1726556400000" data-listing-reading-time-sort="20" data-listing-word-count-sort="3958">
-<div class="thumbnail">
-<p><a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external"></a></p><a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external">
-<p><img src="./posts/la-regresion-lineal-en-machine-learning/mco.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external">La Regresión Lineal en Machine Learning</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Regresión'); return false;">
-Regresión
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external">El alcance de la regresión lineal en machine learning, su ajuste de parámetros con descenso del gradiente y métodos de regularización</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/la-regresion-lineal-en-machine-learning/index.html" class="no-external">
-<div class="listing-date">
-17 sept 2024
-</div>
-<div class="listing-author">
-Hugo Valenzuela Chaparro
-</div>
-<div class="listing-reading-time">
-20 minutos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Info" data-listing-date-sort="1711522800000" data-listing-file-modified-sort="1726292853090" data-listing-date-modified-sort="1711522800000" data-listing-reading-time-sort="1" data-listing-word-count-sort="115">
-<div class="thumbnail">
-<p><a href="./posts/post-de-bienvenida/index.html" class="no-external"></a></p><a href="./posts/post-de-bienvenida/index.html" class="no-external">
-<p><img src="./posts/post-de-bienvenida/thumbnail.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-de-bienvenida/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-de-bienvenida/index.html" class="no-external">Post de bienvenida</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-de-bienvenida/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Info'); return false;">
-Info
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post-de-bienvenida/index.html" class="no-external">¡Hola! Les doy la bienvenida a este primer post. Este blog en realidad es un jardín digital, esto quiere decir que es un espacio para almacenar mis notas de aprendizaje, así…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post-de-bienvenida/index.html" class="no-external">
-<div class="listing-date">
-27 mar 2024
-</div>
-<div class="listing-author">
-Hugo Valenzuela Chaparro
-</div>
-<div class="listing-reading-time">
-1 minutos
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No hay resultados
-</div>
-</div></main> <!-- /main -->
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -506,13 +341,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -540,12 +368,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copiado");
+    button.setAttribute("title", "Copied!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copiado");
+      button.setAttribute("data-bs-title", "Copied!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
